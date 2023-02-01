@@ -8,7 +8,7 @@ from diffusers import StableDiffusionPipeline, EulerAncestralDiscreteScheduler
 def download_model():
     # do a dry run of loading the huggingface model, which will download weights at build time
     t1 = time.time()
-    model_id = "prompthero/openjourney-v2"
+    model_id = "prompthero/funko-diffusion"
     model = StableDiffusionPipeline.from_pretrained(
         model_id
     )
